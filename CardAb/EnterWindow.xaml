@@ -1,0 +1,42 @@
+﻿<Window x:Class="CardAb.EnterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CardAb"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent">
+    <Border Width="Auto" Height="Auto" 
+            BorderBrush="Black"
+            Background="#FF4A4C4E"
+          BorderThickness="1"
+          CornerRadius="10,10,10,10">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+
+            <Button x:Name="close" Style="{StaticResource jB}" Background="Transparent" BorderBrush="Transparent" Height="25" Width="25" VerticalAlignment="Top" HorizontalAlignment="Right" Click="close_Click">
+                <Image Source="Pic/close.png"></Image>
+            </Button>
+
+            <Rectangle Grid.Row="4" Fill="#FF57595B" />
+            <Ellipse Fill="#FF178CE5" Width="100" Height="100"/>
+            <Image Source="Pic/Lab.png" Width="70"/>
+            <TextBlock Grid.Row="1" Text="Вход" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFE2F8F4" FontSize="36"/>
+
+
+            <Button x:Name="logText" Style="{StaticResource jB}" Grid.Row="2" Grid.RowSpan="2" Margin="70,50,70,50" FontSize="24" Foreground="White" Content="Войти" Background="#FF178CE5" Click="logText_Click"/>
+            <Button x:Name="pasText" Style="{StaticResource jB}" Grid.Row="4" Margin="200,50,20,0"  FontSize="14" Background="Transparent" BorderBrush="Transparent" Foreground="Black" Content="Для администратора" Click="pasText_Click" />
+
+          
+        </Grid>
+
+    </Border>
+</Window>

@@ -1,0 +1,125 @@
+﻿<Window x:Class="CardAb.Zaiav"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CardAb"
+        Loaded="Window_Loaded"
+        mc:Ignorable="d"
+        Title="Zaiav" Height="720" Width="1280" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent">
+    <Border Width="Auto" Height="Auto" 
+            BorderBrush="Black"
+            Background="#FF4A4C4E"
+          BorderThickness="1"
+          CornerRadius="10,10,10,10">
+
+        <Grid Margin="1,1,-1,-1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="0.5*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="3" x:Name="close" Style="{StaticResource jB}" Background="Transparent" BorderBrush="Transparent" Height="25" Width="25" VerticalAlignment="Top" HorizontalAlignment="Right" Click="close_Click">
+                <Image Source="Pic/close.png"></Image>
+            </Button>
+
+            <Label FontSize="24" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Заявление:"/>
+            <Label Grid.Row="1" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Фамилия:"/>
+            <Label Grid.Row="2" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Имя:"/>
+            <Label Grid.Row="3" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Отчество:"/>
+            <Label Grid.Row="4" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Телефон:"/>
+            <Label Grid.Row="5" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Социальный статус:"/>
+
+            <Label Grid.Row="6"  Grid.Column="1" Foreground="White" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Паспортные данные:"/>
+            <Label Grid.Row="7"  Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Серия паспорта:"/>
+            <Label Grid.Row="8"  Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Номер паспорта:"/>
+            <Label Grid.Row="9"  Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Дата выдачи:"/>
+            <Label Grid.Row="10" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Кем выдан:"/>
+            <Label Grid.Row="11" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="pKPP:"/>
+            <Label Grid.Row="12" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18"  Content="Адрес проживания:"/>
+            <Label Grid.Row="13" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18"  Content="Адрес прописки:"/>
+            <Label Grid.Row="14" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18"  Content="Дата рождения:"/>
+            <Label Grid.Row="15" Grid.Column="1" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18"  Content="Место рождения:"/>
+
+            <Label Grid.Row="0" Grid.Column="2" Foreground="White" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Данные Аттестата:"/>
+            <Label Grid.Row="1" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Серия аттестата:"/>
+            <Label Grid.Row="2" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Номер аттестата:"/>
+            <Label Grid.Row="3" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Дата выдачи:"/>
+            <Label Grid.Row="4" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Кем выдан:"/>
+            <Label Grid.Row="5" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Средний балл:"/>
+
+            <Label Grid.Row="6" Grid.Column="2"  Foreground="White" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Другое:"/>
+            <Label Grid.Row="7" Grid.Column="2"  Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Оригинал аттестата:"/>
+            <Label Grid.Row="8" Grid.Column="2"  Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Оригинал паспорта:"/>
+            <Label Grid.Row="9" Grid.Column="2"  Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Фото:"/>
+            <Label Grid.Row="10" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Мед. справка:"/>
+            <Label Grid.Row="11" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="Общежитие:"/>
+
+
+            <TextBox x:Name="sname" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="1" Margin="200,10,10,10" />
+            <TextBox x:Name="name" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="2" Margin="200,10,10,10"/>
+            <TextBox x:Name="fname" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="3" Margin="200,10,10,10"/>
+            <TextBox x:Name="phone" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="4" Margin="200,10,10,10"/>
+            <ComboBox x:Name="status" Grid.Row="5" Grid.Column="1"  Margin="200,10,10,10" />
+
+            <TextBox x:Name="passportSer" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="7" Margin="200,10,10,10"/>
+            <TextBox x:Name="passportNum" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="8" Margin="200,10,10,10"/>
+            <DatePicker x:Name="DatePassport" Grid.Column="1"  Grid.Row="9" Margin="200,10,10,10"/>
+            <TextBox x:Name="PassportOrg" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="10" Margin="200,10,10,10"/>
+            <TextBox x:Name="pKPP" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="11" Margin="200,10,10,10"/>
+            <TextBox x:Name="adressProz" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="12" Margin="200,10,10,10"/>
+            <TextBox x:Name="adressProp" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="13" Margin="200,10,10,10"/>
+            <DatePicker x:Name="dateRod" Grid.Column="1"  Grid.Row="14" Margin="200,10,10,10"/>
+            <TextBox x:Name="PlaceRod" Style="{StaticResource jT}" Grid.Column="1"  Grid.Row="15" Margin="200,10,10,10"/>
+
+            <TextBox x:Name="AttSer" Style="{StaticResource jT}" Grid.Row="1" Grid.Column="2" Margin="200,10,10,10"/>
+            <TextBox x:Name="AttNum" Style="{StaticResource jT}" Grid.Row="2" Grid.Column="2" Margin="200,10,10,10"/>
+            <DatePicker x:Name="DatePasp" Grid.Row="3" Grid.Column="2" Margin="200,10,10,10"/>
+            <ComboBox x:Name="AttOrg" Grid.Row="4" Grid.Column="2" Margin="200,10,10,10"/>
+            <TextBox x:Name="AVG" Style="{StaticResource jT}" Grid.Row="5" Grid.Column="2" Margin="200,10,10,10"/>
+
+            <ComboBox x:Name="AttOrig" Grid.Row="7" Grid.Column="2" Margin="200,10,10,10"/>
+            <ComboBox x:Name="PaspOrig" Grid.Row="8" Grid.Column="2" Margin="200,10,10,10"/>
+            <ComboBox x:Name="Photo" Grid.Row="9" Grid.Column="2" Margin="200,10,10,10"/>
+            <ComboBox x:Name="Med" Grid.Row="10" Grid.Column="2" Margin="200,10,10,10"/>
+            <ComboBox x:Name="OurHouse" Grid.Row="11" Grid.Column="2" Margin="200,10,10,10"/>
+
+            <Button x:Name="Otpravit" Content="Отправить" Style="{StaticResource jB}" Foreground="White" Background="#FF178CE5" Grid.Column="2" Grid.Row="15" FontSize="16" Margin="350,10,50,10" Click="Otpravit_Click" Visibility="Hidden"/>
+
+            <Label x:Name="LabelSearch" Grid.Row="12" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="24"  Content="Поиск:" Visibility="Hidden"/>
+
+            <Label x:Name="LabelSearch2" Grid.Row="13" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,5,420,5" FontSize="18" Content="По номеру паспорта:" Visibility="Hidden"/>
+            <TextBox x:Name="Search" Grid.Row="13" Grid.Column="2" Margin="200,10,10,10" TextChanged="Search_TextChanged" Visibility="Hidden"/>
+
+            <Button x:Name="Delete" Content="Удалить" Style="{StaticResource jB}" Foreground="White" Background="#FF178CE5" Grid.Column="2" Grid.Row="15" FontSize="16" Margin="100,10,300,10" Click="Delete_Click" Visibility="Hidden"/>
+            <Button x:Name="change" Content="Изменить" Style="{StaticResource jB}" Foreground="White" Background="#FF178CE5" Grid.Column="2" Grid.Row="15" FontSize="16" Margin="350,10,50,10" Click="change_Click" Visibility="Hidden"/>
+
+            <Button x:Name="ClearBut" Content="Очистить поля" Style="{StaticResource jB}" Foreground="White" Background="#FF178CE5" Grid.Column="2" Grid.Row="14" FontSize="16" Margin="350,10,50,10" Click="ClearBut_Click" Visibility="Hidden"/>
+
+
+
+
+        </Grid>
+    </Border>
+</Window>
